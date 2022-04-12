@@ -57,10 +57,16 @@ local Tab = Window:NewTab("Settings")
 
 local Section = Tab:NewSection("Ui")
 
-Section:NewKeybind("Ui toggle", "Select key for close and open Prison life breaker ui", Enum.KeyCode.RightShift, function()
+Section:NewKeybind("Ui toggle", "Select key for close and open Prison life breaker ui", Enum.KeyCode.Z, function()
 	Library:ToggleUI()
 end)
 
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("Credits:men,yoruldumanne,proyumoye123")
+Section:NewLabel("Discord: men#0327")
+local Tab = Window:NewTab("Working Games")
+local Section = Tab:NewSection("Prison Life")
+local Section = Tab:NewSection("Ninja legends")
 elseif game.PlaceId == 3956818381 then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("Ninja Legends", "Sentinel")
@@ -130,4 +136,4 @@ elseif game.PlaceId == 3956818381 then
             wait(0.5)
         end
     end)
-    end
+end
